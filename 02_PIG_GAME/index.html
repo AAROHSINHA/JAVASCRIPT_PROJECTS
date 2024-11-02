@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
+    <title>PIG GAME</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <a href="instructions.html" target="_blank" class="instructions">?</a>
+    <div class="WINNER win">
+      <div class="winnername">PLAYER 1 WINS</div>
+      <button class="restart_win">RESTART GAME</button>
+    </div>
+    <button class="restart-game game-buttons">RESTART GAME</button>
+    <button class="lock-game game-buttons">LOCK TURN</button>
+    <section class="container">
+      <main class="PLAYER1 player">
+        <div class="triangle t1"></div>
+        <div class="PLAYER-STRUCTURE">
+          <h3 class="player1-name playername">PLAYER 1</h3>
+          <div class="total-score">
+            <h2 class="player-total-score player1-total-score">0</h2>
+            <p>Total Score</p>
+          </div>
+          <div class="current-score">
+            <h2 class="player-current-score player1-current-score">0</h2>
+            <p>Current Score</p>
+          </div>
+          <div class="dice1-img"></div>
+          <button class="game-buttons roll-dice player1-roll-dice">
+            Roll Dice
+          </button>
+        </div>
+      </main>
+      <main class="PLAYER2 player">
+        <div class="triangle triangle2 t2"></div>
+        <div class="PLAYER-STRUCTURE">
+          <h3 class="player2-name playername">PLAYER 2</h3>
+          <div class="total-score">
+            <h2 class="player-total-score player2-total-score">0</h2>
+            <p>Total Score</p>
+          </div>
+          <div class="current-score">
+            <h2 class="player-current-score player2-current-score">0</h2>
+            <p>Current Score</p>
+          </div>
+          <div class="dice2-img"></div>
+          <button class="game-buttons roll-dice player2-roll-dice">
+            Roll Dice
+          </button>
+        </div>
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

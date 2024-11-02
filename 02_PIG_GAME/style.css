@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font1: "Roboto Mono", monospace;
+}
+
+body {
+  /* background: rgb(5, 0, 91);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 0, 91, 1) 0%,
+    rgba(3, 1, 135, 1) 21%,
+    rgba(6, 6, 157, 1) 35%,
+    rgba(5, 22, 166, 1) 51%,
+    rgba(2, 42, 157, 1) 71%,
+    rgba(2, 57, 191, 1) 87%,
+    rgba(0, 48, 255, 1) 100%
+  ); */
+  background-color: #fcba03;
+  /* background-color: cornflowerblue; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font1);
+  position: relative;
+}
+
+.instructions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 20px;
+  width: 4em;
+  height: 2em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2em;
+  text-decoration: none;
+  color: #fcba03;
+  letter-spacing: 2.4px;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 5px;
+}
+
+.restart-game {
+  position: absolute;
+  top: 12em;
+  left: calc(50% - 6em);
+}
+.lock-game {
+  position: absolute;
+  top: 18em;
+  left: calc(50% - 6em);
+}
+
+.container {
+  width: 70vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 3em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.player {
+  width: 48%;
+  height: 100%;
+  /* border: 3px solid black; */
+  border-radius: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fcba03;
+}
+
+.PLAYER-STRUCTURE {
+  /* border: 3px solid black; */
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playername {
+  font-size: 2.5em;
+  letter-spacing: 5px;
+}
+
+.total-score {
+  border: none;
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcba03;
+  color: white;
+}
+
+.player-total-score {
+  letter-spacing: 6px;
+  font-size: 35px;
+}
+.total-score p {
+  font-size: 12px;
+  letter-spacing: 1.8px;
+}
+
+.current-score {
+  /* border: 2px solid black; */
+  width: 15em;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.player-current-score {
+  font-size: 35px;
+  opacity: 0.4;
+}
+.current-score p {
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  opacity: 0.4;
+}
+
+.dice1-img {
+  width: 4em;
+  height: 4em;
+  background-image: url("DICE/dice1.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+.dice2-img {
+  width: 4em;
+  height: 4em;
+  background-image: url("DICE/dice1.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.game-buttons {
+  width: 12em;
+  height: 4em;
+  background-color: #fcba03;
+  border: none;
+  color: white;
+  font-family: var(--font1);
+  letter-spacing: 4px;
+  border-radius: 40px;
+  font-weight: 800;
+  transition: box-shadow 100ms ease-in-out;
+}
+
+.game-buttons:hover {
+  box-shadow: 0.6px 0.6px 3px #fcba03;
+  cursor: pointer;
+}
+.game-buttons:active {
+  box-shadow: none;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #fcba03;
+  position: absolute;
+  top: 4.2em;
+  opacity: 0.5;
+}
+
+.triangle1 {
+  top: 4.2em;
+  border: none;
+}
+.triangle2 {
+  top: 4.2em;
+  border: none;
+}
+
+.WINNER {
+  width: 90vw;
+  height: 80vh;
+  background-color: transparent;
+  position: absolute;
+  z-index: 100;
+  border-radius: 100px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  letter-spacing: 12px;
+  font-weight: 900;
+}
+
+.win {
+  display: none;
+}
+
+.restart_win {
+  width: 14em;
+  height: 4em;
+  background-color: white;
+  border: none;
+  color: red;
+  border: 3px solid red;
+  font-family: var(--font1);
+  letter-spacing: 4px;
+  border-radius: 40px;
+  font-weight: 800;
+  transition: box-shadow 100ms ease-in-out;
+}
+.restart_win:hover {
+  box-shadow: 0.6px 0.6px 3px red;
+  cursor: pointer;
+}
+.restart_win:active {
+  box-shadow: none;
+}
