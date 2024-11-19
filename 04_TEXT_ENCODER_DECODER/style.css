@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --enc: #37474f;
+  --dec: #e3f2fd;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+body section {
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+}
+.enc {
+  left: 30.6%;
+  color: var(--dec);
+  border-bottom: 10px solid var(--dec);
+}
+.dec {
+  left: 50.6%;
+  color: var(--enc);
+  border-bottom: 10px solid var(--enc);
+}
+
+.left-section {
+  background-color: var(--enc);
+}
+.right-section {
+  background-color: var(--dec);
+}
+
+.box {
+  margin-top: 5em;
+  width: 35em;
+  height: 30em;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+textarea {
+  width: 90%;
+  height: 80%;
+  border: none;
+  /* border-radius: 18px; */
+  resize: none;
+  padding: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+  outline: none;
+  position: relative;
+  padding-right: 3em;
+}
+
+button {
+  width: 14em;
+  height: 3em;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  transition: letter-spacing 500ms ease-in;
+}
+
+button:hover {
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 1px 1px 8px white;
+}
+
+.ebtn {
+  border-color: var(--dec);
+  color: var(--dec);
+  margin-left: 1em;
+}
+
+.save-btn {
+  border-color: var(--enc);
+  color: var(--enc);
+}
+
+.copy {
+  position: absolute;
+  /* background-color: rgb(255, 255, 255); */
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copy:hover {
+  cursor: pointer;
+}
+.copy img {
+  width: 80%;
+  height: 80%;
+}
+
+.enc-copy {
+  top: 9.66em;
+  left: 36.4em;
+}
+.dec-copy {
+  top: 9.58em;
+  left: 81.4em;
+}
