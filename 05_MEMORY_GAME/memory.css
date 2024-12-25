@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font1: "Press Start 2P", cursive;
+  --primary-bg: #1a1a2e; /* Dark blue-gray background */
+  --card-bg: #262626; /* Dark gray card background */
+  --card-hover-bg: #4e73df; /* Electric blue for hover */
+  --button-bg: #9b59b6; /* Neon purple for button */
+  --button-hover-bg: #8e44ad; /* Lighter purple on hover */
+  --accent-color: #4e73df; /* Electric blue for highlights */
+  --button-text: #ffffff;
+  --card-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font1);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: var(--accent-color);
+  text-shadow: 0 0 20px var(--accent-color), 0 0 40px var(--accent-color);
+}
+
+.MAIN {
+  width: 40%;
+  height: 50%;
+  background-color: #262626;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-btn {
+  width: 14em;
+  height: 3em;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
+  border-radius: 40px;
+  margin-top: 6px;
+  transition: background-color 100ms ease-in, border 100ms ease-in;
+}
+
+.reset-btn:hover {
+  border: 3px solid var(--button-bg);
+  cursor: pointer;
+  background-color: var(--button-hover-bg);
+  color: #ffffff;
+}
+
+.reset-btn:active {
+  background-color: var(--button-bg);
+  color: #ffffff;
+  border: none;
+}
+
+.card-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 14em;
+  height: 9em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center; /* Horizontally centers the grid items */
+  align-items: center;
+}
+
+.img {
+  background-color: var(--card-bg);
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 12px;
+  transition: transform 350ms ease-in-out, background-color 350ms ease-in-out;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid gray;
+}
+
+.img:hover {
+  background-color: var(--card-hover-bg);
+  cursor: pointer;
+}
+
+.img:active {
+  transform: rotateY(180deg);
+}
