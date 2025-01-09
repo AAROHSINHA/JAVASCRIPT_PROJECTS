@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RandomPasswordGenerator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">RANDOM PASSWORD GENERATOR</h1>
+      <input
+        type="text"
+        class="password"
+        placeholder="PASSWORD WILL BE DISPLAYED HERE"
+      />
+      <div class="reference">
+        <p>ADD REFERENCE</p>
+      </div>
+      <div class="option">
+        <input type="radio" name="uc" id="" />
+        <label for="uc">Include Uppercase Characters</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" name="lc" id="" />
+        <label for="lc">Include Lowercase Characters</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" name="num" id="" />
+        <label for="num">Include Numbers (0-9)</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" name="sym" id="" />
+        <label for="sym">Include Symbols</label>
+      </div>
+      <button class="generate-password">Generate Password</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

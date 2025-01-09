@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font1: "Poppins", serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font1);
+}
+
+body {
+  background-image: url("bg1.jpg");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 35%; /* Increase width */
+  height: 70%; /* Increase height */
+  background-color: rgb(238, 231, 231);
+  border-radius: 3em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 2em 1em 2em 1em;
+}
+
+h1 {
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.password {
+  width: 90%;
+  height: 3em;
+  margin: 1em 2em;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background-color: whitesmoke;
+  padding: 0 1em;
+  text-align: center;
+  font-family: var(--font1);
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 3em;
+  box-sizing: border-box;
+  color: rgb(240, 236, 236);
+}
+
+.reference {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.reference p {
+  background-color: green;
+  width: 8em;
+  height: 1em;
+}
