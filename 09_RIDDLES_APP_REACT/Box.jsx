@@ -34,7 +34,7 @@ const Box = () => {
         const response = await fetch("https://api.api-ninjas.com/v1/riddles", {
           method: "GET",
           headers: {
-            "X-Api-Key": "ROoueMQwluXbIxoXfTDqwQ==YfkaBLHGxpl4mLN4",
+            "X-Api-Key": "your_api_key",
           },
         });
 
